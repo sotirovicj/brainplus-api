@@ -1,0 +1,18 @@
+[
+  {
+    "id": "my-childhood",
+    "name": "My Childhood"
+  },
+  {
+    "id": "food",
+    "name": "Food"
+  },
+  {
+    "id": "art",
+    "name": "Art"
+  },
+  {
+    "id": "household-items",
+    "name": "Household Items"
+  }
+]
