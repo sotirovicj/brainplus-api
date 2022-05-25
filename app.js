@@ -2,6 +2,12 @@ import express from "express";
 
 export function createApp({ countersService, imagesService, topicsService }) {
   const app = express();
+
+  app.use((req, res, next) => {
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    next();
+  });
+
   app.get("/topics/:topicId/images", async (req, res, next) => {
     try {
       const { topicId } = req.params;
